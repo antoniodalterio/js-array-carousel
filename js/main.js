@@ -1,5 +1,6 @@
 'use strict';
 
+// Dichiarazioni variabili
 const images = [
   'img/01.jpg',
   'img/02.jpg',
@@ -9,10 +10,15 @@ const images = [
 ];
 const items = document.querySelector('.items');
 
+// Ciclo for conteggio = larghezza Array(images)
 for (let i = 0; i < images.length; i++) {
+  // elemento creato div
   const div = document.createElement('div');
-  items.append(div);
   div.classList.add('item');
+
+  items.append(div);
+
+  // elemento creato img
   const img = document.createElement('img');
   div.append(img);
   img.src = images[i];

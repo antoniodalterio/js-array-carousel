@@ -25,6 +25,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  opacity: 0;
 }
 
 .item img {
@@ -34,7 +35,7 @@
 }
 
 .item.active {
-  display: block;
+  opacity: 1;
 }
 
 .prev,
