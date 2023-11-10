@@ -9,17 +9,49 @@ const images = [
   'img/05.jpg',
 ];
 const items = document.querySelector('.items');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+let currentItem = 0;
 
 // Ciclo for conteggio = larghezza Array(images)
 for (let i = 0; i < images.length; i++) {
   // elemento creato div
-  const div = document.createElement('div');
-  div.classList.add('item');
+  const item = document.createElement('div');
+  item.classList.add('item');
 
-  items.append(div);
+  items.append(item);
+
+  if (i === currentItem) {
+    item.classList.add('active');
+  }
 
   // elemento creato img
   const img = document.createElement('img');
-  div.append(img);
+  item.append(img);
   img.src = images[i];
 }
+
+// selettore di tipo per le classi item
+const allItem = document.querySelectorAll('.item');
+
+// funzione evento al click della freccia next
+
+next.addEventListener('click', function () {
+  if (currentItem < allItem.length - 1) {
+    allItem[currentItem].classList.remove('active');
+
+    currentItem++;
+    allItem[currentItem].classList.add('active');
+  }
+});
+
+// funzione evento al click della freccia pre
+
+prev.addEventListener('click', function () {
+  if (currentItem > 0) {
+    allItem[currentItem].classList.remove('active');
+
+    currentItem--;
+    allItem[currentItem].classList.add('active');
+  }
+});

@@ -17,6 +17,23 @@ Tutte le immagini saranno nascoste, tranne la prima, che avrà una classe specif
 
 MILESTONE 2
 Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.
+
+1. creare una funzione che al click della freccia in su l'immagine torna a quella precedente
+
+   - se currentItem decrementa
+   - active viene eliminata dall'elemento attuale
+   - passa all'elemento precedente
+
+2. creare una funzione che al click della freccia in giu l'immagine passa alla successiva
+
+   - se currentItem incrementa
+   - active viene eliminata dall'elemento attuale
+   - passa all'elemento successivo
+
+3. creare variabile "currentItem" che assegna la classe "active" alla variabile "item"
+
+4) creare una variabile che seleziona tutti gli elementi con classe "items"
+
 BONUS 1:
 Aggiungere il ciclo infinito del carosello. Ovvero se è attiva la prima immagine e l'utente clicca la freccia per andare all’immagine precedente, dovrà comparire l’ultima immagine dell’array e viceversa.
 BONUS 2:
