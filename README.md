@@ -34,9 +34,22 @@ Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, c
 
 4) creare una variabile che seleziona tutti gli elementi con classe "items"
 
-BONUS 1:
+# BONUS 1:
+
 Aggiungere il ciclo infinito del carosello. Ovvero se è attiva la prima immagine e l'utente clicca la freccia per andare all’immagine precedente, dovrà comparire l’ultima immagine dell’array e viceversa.
-BONUS 2:
+
+1. creare una condizione loop avanti.
+
+   - ALTRIMENTI SE la currentItem è uguale all'ultima immagine della nodeselection "allItem"
+     - currenteItem è uguale alla prima immagine della nodeselection "allItem"
+
+2)  creare una condizione loop indietro
+
+- ALTRIMENTI SE la currentItem è uguale alla prima immagine della nodeselection "allItem"
+  - currenteItem è uguale all'ultima immagine della nodeselection "allItem"
+
+# BONUS 2:
+
 Aggiungere la visualizzazione di tutte le thumbnails sulla destra dell’immagine grande attiva, come nello screenshot proposto. Tutte le miniature avranno un layer di opacità scura, tranne quella corrispondente all’immagine attiva, che invece avrà un bordo colorato.
 Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di miniatura attiva.
 BONUS 3:

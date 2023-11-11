@@ -42,16 +42,27 @@ next.addEventListener('click', function () {
 
     currentItem++;
     allItem[currentItem].classList.add('active');
+  } else if (currentItem === 4) {
+    allItem[currentItem].classList.remove('active');
+
+    currentItem = 0;
+    allItem[currentItem].classList.add('active');
   }
 });
 
-// funzione evento al click della freccia pre
+// funzione evento al click della freccia next
 
 prev.addEventListener('click', function () {
   if (currentItem > 0) {
     allItem[currentItem].classList.remove('active');
 
     currentItem--;
+    allItem[currentItem].classList.add('active');
+    console.log(currentItem);
+  } else if (currentItem === 0) {
+    allItem[currentItem].classList.remove('active');
+
+    currentItem = 4;
     allItem[currentItem].classList.add('active');
   }
 });
